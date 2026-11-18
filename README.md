@@ -6,6 +6,8 @@ Ports:
 - Output: Aval[7:0], Bval[7:0].
 
 # Function selection F: 
+| F | Meaning |
+| --- | --- |
 | '000' | 'AND' | 
 | '001' | 'OR' |
 | '010' | 'XOR' |
@@ -16,6 +18,8 @@ Ports:
 | '111' | 'CLR' |
 
 # Routing R: 
+| R | Meaning |
+| --- | --- |
 | '00' | 'A/B unchanged' | 
 | '01' | 'result -> B' | 
 | '10' | 'result -> A' | 
