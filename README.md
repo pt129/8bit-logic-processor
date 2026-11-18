@@ -1,4 +1,4 @@
-# 8-bit bit-serial logic processor
+# 8-bit bit-serial logic processor using AMD Spartan-7 Urbana board
 
 Add the five .sv files as Vivado design sources. Set logic_processor_top as top.
 Ports: 
@@ -8,22 +8,22 @@ Ports:
 # Function selection F: 
 | F | Meaning |
 | --- | --- |
-| '000' | 'AND' | 
-| '001' | 'OR' |
-| '010' | 'XOR' |
-| '011' | 'xFF' |
-| '100' | 'NAND' | 
-| '101' | 'NOR' | 
-| '110' | 'XNOR' |
-| '111' | 'CLR' |
+| `000` | `AND` | 
+| `001` | `OR` |
+| `010` | `XOR` |
+| `011` | `xFF` |
+| `100` | `NAND` | 
+| `101` | `NOR` | 
+| `110` | `XNOR` |
+| `111` | `CLR` |
 
 # Routing R: 
 | R | Meaning |
 | --- | --- |
-| '00' | 'A/B unchanged' | 
-| '01' | 'result -> B' | 
-| '10' | 'result -> A' | 
-| '11' | 'swap A and B' |
+| `00` | `A/B unchanged` | 
+| `01` | `result -> B` | 
+| `10` | `result -> A` | 
+| `11` | `swap A and B` |
 
 IMPORTANT: This is synthesizable core RTL, NOT a complete pushbutton-safe board design.
 External switches/buttons must be electrically valid and synchronized to Clk.
